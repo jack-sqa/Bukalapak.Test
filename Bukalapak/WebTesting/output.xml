@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200911 21:58:50.714" generator="Robot 3.2.1 (Python 2.7.16 on darwin)">
+<suite source="/Users/machruk/PycharmProjects/belajarpython/Bukalapak/Add_to_chart.robot" id="s1" name="Add to chart">
+<kw type="setup" name="Open My Browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200911 21:58:50.939" level="INFO">Opening browser 'chrome' to base url 'https://www.bukalapak.com/'.</msg>
+<status status="PASS" endtime="20200911 21:58:56.377" starttime="20200911 21:58:50.939"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200911 21:58:56.750" starttime="20200911 21:58:56.378"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:58:56.750" starttime="20200911 21:58:50.939"></status>
+</kw>
+<test id="s1-t1" name="Login with Username">
+<kw name="Login with Username">
+<kw name="Click Login Menu">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${menu_login}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:58:56.777" starttime="20200911 21:58:56.752"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${menu_login}</arg>
+</arguments>
+<msg timestamp="20200911 21:58:56.778" level="INFO">Clicking element 'xpath://p[contains(text(),'Login')]'.</msg>
+<status status="PASS" endtime="20200911 21:58:56.956" starttime="20200911 21:58:56.777"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:58:56.956" starttime="20200911 21:58:56.751"></status>
+</kw>
+<kw name="Input Username">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${field_username}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:58:57.728" starttime="20200911 21:58:56.957"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${field_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200911 21:58:57.728" level="INFO">Typing text 'machruk.m@gmail.com' into text field 'id:user_session_username'.</msg>
+<status status="PASS" endtime="20200911 21:58:57.829" starttime="20200911 21:58:57.728"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:58:57.829" starttime="20200911 21:58:56.956"></status>
+</kw>
+<kw name="Input Password">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${field_pwd}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:58:57.845" starttime="20200911 21:58:57.830"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${field_pwd}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20200911 21:58:57.846" level="INFO">Typing text 'bukaaj4' into text field 'id:user_session_password'.</msg>
+<status status="PASS" endtime="20200911 21:58:57.910" starttime="20200911 21:58:57.846"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:58:57.910" starttime="20200911 21:58:57.830"></status>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20200911 21:58:57.912" level="INFO">Clicking element 'xpath://button[@name='commit']//i'.</msg>
+<status status="PASS" endtime="20200911 21:58:58.395" starttime="20200911 21:58:57.912"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200911 21:59:01.397" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200911 21:59:01.397" starttime="20200911 21:58:58.396"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:01.397" starttime="20200911 21:58:57.910"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:01.397" starttime="20200911 21:58:56.751"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:01.397" critical="yes" starttime="20200911 21:58:56.750"></status>
+</test>
+<test id="s1-t2" name="Select Product to add to cart">
+<kw name="Select Product to add to cart">
+<kw name="Search Product">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${field_search}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:59:20.254" starttime="20200911 21:59:01.401"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${field_search}</arg>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20200911 21:59:20.255" level="INFO">Typing text 'Gitar Akustik Cowboy GW 240 NA' into text field 'id:v-omnisearch__input'.</msg>
+<status status="PASS" endtime="20200911 21:59:20.647" starttime="20200911 21:59:20.254"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button_search}</arg>
+</arguments>
+<msg timestamp="20200911 21:59:20.648" level="INFO">Clicking element 'xpath://div[@id='v-omnisearch']//button//*[local-name()='svg']'.</msg>
+<status status="PASS" endtime="20200911 21:59:21.933" starttime="20200911 21:59:20.647"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:21.933" starttime="20200911 21:59:01.400"></status>
+</kw>
+<kw name="Click 4 stars to up">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${4stars}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:59:22.736" starttime="20200911 21:59:21.934"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${4stars}</arg>
+</arguments>
+<msg timestamp="20200911 21:59:22.736" level="INFO">Clicking element 'xpath://span[contains(text(),'4 ke atas')]'.</msg>
+<status status="PASS" endtime="20200911 21:59:22.950" starttime="20200911 21:59:22.736"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:22.950" starttime="20200911 21:59:21.934"></status>
+</kw>
+<kw name="Select Product">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${product_selected}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:59:23.886" starttime="20200911 21:59:22.951"></status>
+</kw>
+<kw name="Mouse Down On Image" library="Selenium2Library">
+<doc>Simulates a mouse down event on an image identified by ``locator``.</doc>
+<arguments>
+<arg>${product_selected}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:59:24.222" starttime="20200911 21:59:23.886"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:24.222" starttime="20200911 21:59:22.951"></status>
+</kw>
+<kw name="Click Add to Cart">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${btn_add_to_cart}</arg>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20200911 21:59:24.246" starttime="20200911 21:59:24.222"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_add_to_cart}</arg>
+</arguments>
+<msg timestamp="20200911 21:59:24.247" level="INFO">Clicking element 'xpath://body//div//div//div//div//div//div[1]//div[1]//div[1]//div[3]//div[1]//button[1]//span[1]//div[1]'.</msg>
+<status status="PASS" endtime="20200911 21:59:24.293" starttime="20200911 21:59:24.246"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:24.293" starttime="20200911 21:59:24.222"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:24.293" starttime="20200911 21:59:01.400"></status>
+</kw>
+<status status="PASS" endtime="20200911 21:59:24.293" critical="yes" starttime="20200911 21:59:01.399"></status>
+</test>
+<status status="PASS" endtime="20200911 21:59:24.295" starttime="20200911 21:58:50.716"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Add to chart" pass="2">Add to chart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
