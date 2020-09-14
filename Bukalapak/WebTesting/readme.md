@@ -8,3 +8,6 @@
      "#Click OK button"
 
 - To enter the OTP code manually, do not modify the script
+
+to see video
+https://drive.google.com/file/d/1f3b8akYGqtgnfywAJC6jWu32Sq7Kqg64/view?usp=sharing
